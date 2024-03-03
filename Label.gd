@@ -9,5 +9,5 @@ func update_day_counter():
 	text = "Day: " + str(dayCounter)
 
 func _on_Button_pressed():
-	dayCounter += 0
+	dayCounter += 1
 	update_day_counter()
