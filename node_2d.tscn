@@ -14,26 +14,15 @@ offset_bottom = 1080.0
 color = Color(0, 0.658824, 0.780392, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(951, 558)
+position = Vector2(647, 420)
 scale = Vector2(0.275156, 0.275156)
 texture = ExtResource("1_1lrxa")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 1641.0
-offset_top = 42.0
-offset_right = 1858.0
-offset_bottom = 131.0
-script = ExtResource("2_t2x0v")
-
-[node name="CooldownTimer" type="Timer" parent="Label"]
-wait_time = 120.0
-one_shot = true
-
 [node name="Button" type="Button" parent="."]
-offset_left = 28.0
-offset_top = 17.0
-offset_right = 319.0
-offset_bottom = 202.0
+offset_left = -45.0
+offset_top = -14.0
+offset_right = 246.0
+offset_bottom = 171.0
 theme_override_colors/icon_pressed_color = Color(0.184314, 0.184314, 0.184314, 0.745098)
 theme_override_styles/focus = SubResource("StyleBoxEmpty_i3yme")
 icon = ExtResource("3_82d6r")
@@ -41,4 +30,26 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
-[connection signal="pressed" from="Button" to="Label" method="_on_Button_pressed"]
+[node name="DayCounter" type="Label" parent="."]
+offset_left = 991.0
+offset_top = 48.0
+offset_right = 1084.0
+offset_bottom = 79.0
+script = ExtResource("2_t2x0v")
+
+[node name="ProgressBar" type="ProgressBar" parent="DayCounter"]
+offset_left = -14.0
+offset_top = -6.0
+offset_right = 244.0
+offset_bottom = 29.0
+max_value = 120.0
+value = 120.0
+rounded = true
+show_percentage = false
+
+[node name="CountdownTimer" type="Timer" parent="DayCounter"]
+wait_time = 120.0
+one_shot = true
+
+[connection signal="pressed" from="Button" to="DayCounter" method="_on_Button_pressed"]
+[connection signal="timeout" from="DayCounter/CountdownTimer" to="DayCounter" method="_on_timer_timeout"]
