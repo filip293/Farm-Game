@@ -47,7 +47,6 @@ metadata/_edit_lock_ = true
 
 [node name="CountdownTimer" type="Timer" parent="Button/DayCounter"]
 wait_time = 3.0
-one_shot = true
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="Button/DayCounter"]
 layout_mode = 1
