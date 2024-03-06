@@ -12,7 +12,7 @@ func update_day_counter():
 @warning_ignore("unused_parameter")
 func _process(float) -> void:
 	if !is_done and $CountdownTimer:
-		$ProgressBar.value = $CountdownTimer.time_left
+		$TextureProgressBar.value = $CountdownTimer.time_left
 		#print_debug($CountdownTimer.time_left)  #TIMER LEFT DEBUG
 
 func _on_Button_pressed():
