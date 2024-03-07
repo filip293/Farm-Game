@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bq0t8i0nex62k" path="res://grass_block.png" id="1_1lrxa"]
 [ext_resource type="Script" path="res://Label.gd" id="2_t2x0v"]
-[ext_resource type="Texture2D" uid="uid://c78h58n188jhs" path="res://next-button-pixel-text-word-label-logo-transparent-png-909178.png" id="4_ilbh0"]
+[ext_resource type="Texture2D" uid="uid://cuf5edgcgsk4h" path="res://next-button-pixel-text-word-label-logo-transparent-png-909178.png" id="4_ilbh0"]
 [ext_resource type="Texture2D" uid="uid://c2ab7gxmrn0fc" path="res://download.jpg" id="5_5kvgw"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i3yme"]
@@ -16,7 +16,7 @@ color = Color(0, 0.658824, 0.780392, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(647, 420)
+position = Vector2(664, 413)
 scale = Vector2(0.275156, 0.275156)
 texture = ExtResource("1_1lrxa")
 
